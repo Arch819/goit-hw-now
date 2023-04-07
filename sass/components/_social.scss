@@ -1,0 +1,22 @@
+.social {
+    @include flex-center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-link {
+    @include flex-center;
+    padding: 8px;
+    background-color: var(--background-fon-secondary);
+    border-radius: 100px;
+}
+
+.social-icon {
+    fill: transparent;
+    stroke: var(--color-hover-link);
+}
+
+.header .social-icon {
+    width: 40px;
+    height: 40px;
+}

@@ -1,0 +1,54 @@
+.header__list-button {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        @include flex-center;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
+        gap: 24px;
+    }
+}
+
+.list-button__item {
+    @media screen and (max-width: 767px) {
+        &:not(:last-child){
+            margin-bottom: 12px;
+        } 
+    }
+}
+
+.item__btn {
+    padding: 9px 23px;
+
+    &.secondary-btn {
+        background-color: transparent;
+        border-color: #bcd0e5;
+        border-radius: 4px;
+
+        &:hover,
+        &:focus {
+            background-color: var(--background-default-btn);
+            color: var(--color-def);
+        }
+    }
+
+    &:hover,
+    &:focus {
+        border-color: var(--background-default-btn);
+    }
+
+    transition: border-color var(--transition), background-color var(--transition), color var(--transition);
+
+}
+
+.them-btn {
+    @include flex-center;
+    border: none;
+    background: var(--background-fon);
+    padding: 4px;
+    border-radius: 100px;
+}

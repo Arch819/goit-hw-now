@@ -1,0 +1,7 @@
+.general-btn {
+    @include button-def;
+
+    &:hover, &:focus {
+        @include button-active;
+    }
+}

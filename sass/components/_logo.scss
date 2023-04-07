@@ -1,0 +1,13 @@
+.logo-link {
+    @include flex-center;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.logo-icon {
+    margin-right: 16px;
+}
+.logo__text {
+    @include font-text(700, 30px, 28px);
+    color: var(--color-logo-text);
+}
