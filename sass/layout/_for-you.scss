@@ -1,0 +1,94 @@
+.for-you {
+    // background: linear-gradient(179.59deg, #EDEDED 0.35%, rgba(255, 255, 255, 0.0001) 99.63%);
+    border-radius: 0 0 100% 100% / 0 0 20% 20%;
+}
+.for-you-wrapp {
+    padding-bottom: 38px;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+}
+
+.for-you-title {
+    @include font-text($fw: 700, $fs: 32px, $lh: 48px);
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 500px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.for-you-list {
+    @media screen and (max-width:767px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        @include flex-center;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+.for-you-item {
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 90px) / 4);
+    }
+}
+
+.for-you-icon {
+    @media screen and (max-width: 767px) {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 24px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 18px;
+    }
+}
+
+.for-you-item-title {
+    @include font-text($fw: 600, $fs: 22px, $lh: 33px);
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 13px;
+    }
+}
+
+.for-you-item-text {
+    @include font-text;
+
+    @media screen and (max-width: 767px) {
+        max-width: 240px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.for-you-btn {
+    @include font-text($fw: 700, $lh: 24px);
+    padding: 15px 33px;
+    margin-left: auto;
+    margin-right: auto;
+
+    transition: border var(--transition), background var(--transition), color var(--transition);
+
+    &:hover,
+    &:focus {
+        border-color: #bcd0e5;
+    }
+}

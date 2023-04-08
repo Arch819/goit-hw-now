@@ -3,6 +3,7 @@
 @import "./base/normalize";
 @import "./base/reset";
 @import "./base/container";
+@import "./base/background";
 
 // VENDORS
 @import "./vendors/mixin";
@@ -16,3 +17,6 @@
 
 // LAYOUT
 @import "./layout/header";
+@import "./layout/hero";
+@import "./layout/for-you";
+@import "./layout/management";
