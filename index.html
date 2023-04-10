@@ -106,25 +106,25 @@
         </div>
     </header>
     <main>
-        <div class="background-wrapp">
-            <section class="hero">
-                <div class="container">
-                    <h1 class="hero-title">Work at the speed
-                        of thought</h1>
-                    <p class="hero-text">Tools, tutorials, design and innovation experts, all in one place! The most
-                        intuitive way to imagine your next user
-                        experience.</p>
-                    <div class="hero-btn-tumb">
-                        <button type="button" class="hero-btn general-btn btn">Get started</button>
-                        <a href="" class="custom-btn">
-                            <svg class="hero-btn-icon" width="20" height="18">
-                                <use href="./images/sprite.svg#icon-play"></use>
-                            </svg>
-                            Watch the Video
-                        </a>
-                    </div>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Work at the speed
+                    of thought</h1>
+                <p class="hero-text">Tools, tutorials, design and innovation experts, all in one place! The most
+                    intuitive way to imagine your next user
+                    experience.</p>
+                <div class="hero-btn-tumb">
+                    <button type="button" class="hero-btn general-btn btn">Get started</button>
+                    <a href="" class="custom-btn">
+                        <svg class="hero-btn-icon" width="20" height="18">
+                            <use href="./images/sprite.svg#icon-play"></use>
+                        </svg>
+                        Watch the Video
+                    </a>
                 </div>
-            </section>
+            </div>
+        </section>
+        <div class="background-wrapp">
             <section class="section for-you">
                 <div class="container for-you-wrapp">
                     <h2 class="for-you-title">Product was Built Specifically for You</h2>
@@ -162,16 +162,162 @@
                 </div>
             </section>
         </div>
-        <section class="management section">
-            <p>Effortless Validation for</p>
-            <h2>Management</h2>
-            <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the
-                overall
-                personality of the person.</p>
-            <h3>Accessory makers</h3>
-            <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
-            <h3>Alterationists</h3>
-            <p>If you are looking for a new way to promote your business that won’t cost you more money.</p>
+        <section class="services section">
+            <div class="container">
+                <h2 class="visibility-hidden">services</h2>
+                <ul class="services-list list">
+                    <li class="management-item services-item">
+                        <div class="services-item-img">
+                            <picture>
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/product-page/services/mobile/management.png 1x, ./images/product-page/services/mobile/management@2x.png 2x"
+                                    width="350" height="306">
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/product-page/services/management-img.png 1x, ./images/product-page/services/management-img@2x.png 2x"
+                                    width="540" height="500">
+                                <img srcset="./images/product-page/services/management-img@2x.png 2x"
+                                    src="./images/product-page/services/management-img.png" alt="documents">
+                            </picture>
+                        </div>
+                        <div class="services-item-wrapp">
+                            <p class="item-top-text">Effortless Validation for</p>
+                            <h3 class="services-item-title">Management</h3>
+                            <p class="services-item-text">The Myspace page defines the individual, his or her
+                                characteristics,
+                                traits, personal choices
+                                and the overall personality of the person.</p>
+                            <ul class="nested-list list">
+                                <li class="nested-list-item">
+                                    <h4 class="nested-list-title">Accessory makers</h4>
+                                    <p class="nested-list-text">While most people enjoy casino gambling, sports betting,
+                                        lottery and bingo playing
+                                        for the
+                                        fun.</p>
+                                </li>
+                                <li class="nested-list-item">
+                                    <h4 class="nested-list-title">Alterationists</h4>
+                                    <p class="nested-list-text">If you are looking for a new way to promote your
+                                        business that won’t cost you more
+                                        money.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="customer-support-item services-item">
+                        <div class="services-item-img">
+                            <picture>
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/product-page/services/mobile/customer-support.png 1x, ./images/product-page/services/mobile/customer-support@2x.png 2x"
+                                    width="350" height="306">
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/product-page/services/support-img.png 1x, ./images/product-page/services/support-img@2x.png 2x"
+                                    width="540" height="500">
+                                <img srcset="./images/product-page/services/support-img@2x.png 2x"
+                                    src="./images/product-page/services/support-img.png" alt="search-engines">
+                            </picture>
+                        </div>
+                        <div class="services-item-wrapp">
+                            <p class="item-top-text">Easier decision making for</p>
+                            <h3 class="services-item-title">Customer Support</h3>
+                            <p class="services-item-text">The Myspace page defines the individual, his or her
+                                characteristics,
+                                traits, personal choices
+                                and the overall personality of the person.</p>
+                            <ul class="nested-list list">
+                                <li class="nested-list-item tick">
+                                    <span class="item-tick-icon">
+                                        <svg class="tick-icon" width="16" height="12">
+                                            <use href="./images/sprite.svg#icon-tick"></use>
+                                        </svg>
+                                    </span>
+                                    <p class="nested-list-text tick">Never worry about overpaying for your energy again.</p>
+                                </li>
+                                <li class="nested-list-item tick">
+                                    <span class="item-tick-icon">
+                                        <svg class="tick-icon" width="16" height="12">
+                                            <use href="./images/sprite.svg#icon-tick"></use>
+                                        </svg>
+                                    </span>
+                                    <p class="nested-list-text tick">We will only switch you to energy companies that we
+                                        trust and will treat you right
+                                    </p>
+                                </li>
+                                <li class="nested-list-item tick">
+                                    <span class="item-tick-icon">
+                                        <svg class="tick-icon" width="16" height="12">
+                                            <use href="./images/sprite.svg#icon-tick"></use>
+                                        </svg>
+                                    </span>
+                                    <p class="nested-list-text tick">We track the markets daily and know where the savings
+                                        are.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="collaborative-item services-item">
+                        <div class="services-item-img">
+                            <picture>
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/product-page/services/mobile/collaborative.png 1x, ./images/product-page/services/mobile/collaborative@2x.png 2x"
+                                    width="350" height="306">
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/product-page/services/collaboration-img.png 1x, ./images/product-page/services/collaboration-img@2x.png 2x"
+                                    width="540" height="500">
+                                <img srcset="./images/product-page/services/collaboration-img@2x.png 2x"
+                                    src="./images/product-page/services/collaboration-img.png" alt="image-folder">
+                            </picture>
+                        </div>
+                        <div class="services-item-wrapp">
+                            <p class="item-top-text">Optimisation for</p>
+                            <h3 class="services-item-title">Collaborative</h3>
+                            <p class="services-item-text">Few would argue that, despite the advancements of feminism
+                                over the past
+                                three decades, women
+                                still face a double standard when it comes to their behavior.</p>
+                            <ul class="nested-list list">
+                                <li class="nested-list-item">
+                                    <h4 class="nested-list-title">Accessory makers</h4>
+                                    <p class="nested-list-text">While most people enjoy casino gambling, sports betting,
+                                        lottery and bingo playing
+                                        for the fun.</p>
+                                </li>
+                                <li class="nested-list-item">
+                                    <h4 class="nested-list-title">Alterationists</h4>
+                                    <p class="nested-list-text">If you are looking for a new way to promote your
+                                        business that won’t cost you more
+                                        money.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="process section">
+           <div class="container process-wrapp">
+                <h2 class="process-title">Quick & Easy Process</h2>
+                <p class="process-text">Do you require some help for your project: Conception workshop,
+                prototyping, marketing strategy, landing page, Ux/UI?</p>
+                <ul class="process-list list">
+                    <li class="process-list-item">
+                        <img src="./images/process/avatar-girl.jpg" alt="avatar people" width="98" height="98">
+                        <p class="process-item-text">I can take care of your pitch</p>
+                    </li>
+                    <li class="process-list-item">
+                        <img src="./images/process/avatar-boy.jpg" alt="avatar people" width="98" height="98">
+                        <p class="process-item-text">I can take care of your pitch</p>
+                    </li>
+                    <li class="process-list-item">
+                        <img src="./images/process/avatar-man.jpg" alt="avatar people" width="98" height="98">
+                        <p class="process-item-text">I can help marketing strategy</p>
+                    </li>
+                    <li class="process-list-item">
+                        <img src="./images/process/avatar-woman.jpg" alt="avatar people" width="98" height="98">
+                        <p class="process-item-text">I can prototype your app</p>
+                    </li>
+                </ul>
+                <button class="process-btn general-btn btn" type="button">Contact our expert</button>
+           </div>
         </section>
     </main>
     <footer></footer>

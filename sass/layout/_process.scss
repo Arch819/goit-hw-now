@@ -1,0 +1,112 @@
+.process-wrapp {
+    padding-top: 50px;
+}
+
+.process-title {
+    @include font-text($fw: 700, $fs: 32px, $lh: 48px);
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 25px;
+    }
+}
+
+.process-text {
+    @include font-text($fw: 500);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 767px) {
+        max-width: 338px;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 542px;
+    }
+}
+
+.process-list {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 32px;
+    }
+    @media screen and (min-width: 768px) {
+        @include flex-center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px 100px;
+        margin-bottom: 50px;
+    }
+}
+
+.process-list-item {
+    @include flex-center;
+    justify-content: space-between;
+
+    &:nth-child(even) img {
+        order: 1;
+    }
+
+    @media screen and (max-width: 767px) {
+        gap: 14px;
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+        & img {
+            width: 90px;
+            height: 90px;
+        }
+
+    }
+    @media screen and (min-width: 768px) {
+        gap: 10px;
+        width: calc((100% - 100px) / 2);
+        max-width: 408px;
+        height: 98px;
+
+        & img {
+            width: 98px;
+            height: 98px;
+        }
+
+        &:last-child, &:first-child {
+            order: -1;
+        }
+    }
+}
+
+.process-item-text {
+    @include font-text($fw: 500);
+    text-align: center;
+    border-radius: 26.5px;
+
+    @media screen and (max-width: 767px) {
+        padding: 12px 20px;
+        box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 300px;
+        padding: 14px 22px;
+        box-shadow: 2px 2px 10px rgba(23, 58, 86, 0.15);
+    }
+}
+
+.process-btn {
+    padding: 15px 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover,
+    &:focus {
+        border-color: #bcd0e5;
+    }
+
+    transition: color var(--transition), background var(--transition), border var(--transition);
+}
