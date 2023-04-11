@@ -1,0 +1,144 @@
+.price-wrapp {
+    text-align: center;
+}
+
+.price__title {
+    @include font-text($fw: 700, $fs: 34px, $lh: 51px);
+}
+
+.price__text {
+    @include font-text($fw: 500, $lh: 24px);
+}
+
+.price-name {
+    @include font-text($fw: 700, $fs: 24px, $lh: 40px);
+    margin-bottom: 8px;
+}
+
+.price-description {
+    @include font-text($lh: 40px);
+    margin-bottom: 16px;
+}
+
+.price__card {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding-bottom: 32px;
+
+    &:nth-child(2) {
+        background-color: var(--background-default-btn);
+        color: var(--color-def);
+    }
+}
+
+.price-figure-wrapp {
+    @include flex-center;
+    justify-content: center;
+    margin-bottom: 16px;
+
+
+    .price__card:not(:nth-child(2)) & {
+        color: var(--color-hover-link);
+    }
+}
+
+.price__figure {
+    @include font-text($fw: 700, $fs: 76px, $lh: 100px);
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin-right: 7px;
+
+    
+}
+.currency {
+    text-align: left;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    margin-bottom: 7px;
+}
+
+.sub-text {
+    @include font-text($lh: 19px);
+    letter-spacing: 0.1px;
+    color: #afafaf;
+}
+
+.description-sub-text {
+    @include font-text($fw: 500, $lh: 22px);
+    letter-spacing: 0.2px;
+}
+
+.sub-text-item {
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+.price-btn {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 11px 18px;
+    border-radius: 8px;
+
+    transition: color var(--transition), background var(--transition), border var(--transition);
+
+    &:not(:nth-child(2)):is(:hover, :focus) {
+        border-color: #bcd0e5;
+    }
+
+    &.secondary-btn {
+        border-radius: 4px;
+        background: var(--color-def);
+        color: var(--color-hover-link);
+
+        &:is(:hover, :focus) {
+            color: var(--color-text);
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .price__title {
+        margin-bottom: 8px;
+    }
+
+    .price__text {
+        margin-bottom: 74px;
+    }
+
+    .price__card {
+        padding-top: 24px;
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .description-sub-text {
+        margin-bottom: 38px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .price__title {
+        margin-bottom: 10px;
+    }
+
+    .price__text {
+        margin-bottom: 40px;
+    }
+
+    .price__menu {
+        @include flex-center;
+        gap: 72px;
+    }
+
+    .price__card {
+        padding-top: 32px;
+        width: calc((100% - 144px) / 3);
+    }
+
+    .description-sub-text {
+        margin-bottom: 30px;
+    }
+}
