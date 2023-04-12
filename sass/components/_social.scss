@@ -14,6 +14,13 @@
 .social-icon {
     fill: transparent;
     stroke: var(--color-hover-link);
+
+    transition: fill var(--transition), stroke var(--transition);
+
+    // .social-link:is(:hover, :focus) & {
+    //     fill: var(--color-hover-link);
+    //     stroke: var(--color-def);
+    // }
 }
 
 .header .social-icon {

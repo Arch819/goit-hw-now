@@ -1,3 +1,18 @@
+.process {
+    background: linear-gradient(180deg, #ededed 0.35%, rgba(255, 255, 255, 0.0001) 99.63%);
+    background-origin: border-box;
+
+    @media screen and (max-width: 767px) {
+        border-radius: 100% 100%  0% 0%/ 10% 10% 0% 0%;
+        
+    }
+
+    @media screen and (min-width: 768px) {
+        border-radius: 100% 100%  0% 0%/ 20% 20% 0% 0%;
+        
+    }
+}
+
 .process-wrapp {
     padding-top: 50px;
 }
@@ -62,7 +77,6 @@
             width: 90px;
             height: 90px;
         }
-
     }
     @media screen and (min-width: 768px) {
         gap: 10px;
@@ -75,7 +89,8 @@
             height: 98px;
         }
 
-        &:last-child, &:first-child {
+        &:last-child,
+        &:first-child {
             order: -1;
         }
     }

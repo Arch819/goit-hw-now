@@ -1,0 +1,82 @@
+.clients-say__tittle {
+    @include font-text($fw: 700, $fs: 32px, $lh: 57px);
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.clients-say__text {
+    @include font-text($fw: 500, $lh: 28px);
+    @include margin-auto;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.comment__item {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    padding: 28px 26px;
+}
+
+.comment__stars-icon {
+    margin-bottom: 16px;
+}
+
+.comment__text {
+    @include font-text($lh: 28px);
+    margin-bottom: 16px;
+    letter-spacing: 0.2px;
+}
+
+.comment__user-date {
+    @include flex-center;
+    gap: 14px;
+}
+
+.comment__user-name {
+    @include font-text($fw: 600, $lh: 24px);
+    letter-spacing: 0.2px;
+    color: var(--color-hover-link);
+}
+
+.comment__user-role {
+    @include font-text($fw: 500, $fs: 14px, $lh: 24px);
+    letter-spacing: 0.2px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .clients-say__tittle {
+        margin-bottom: 8px;
+    }
+
+    .clients-say__text {
+        margin-bottom: 32px;
+        max-width: 323px;
+    }
+
+    .comment__item {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .clients-say__tittle {
+        margin-bottom: 10px;
+    }
+
+    .clients-say__text {
+        margin-bottom: 38px;
+        max-width: 537px;
+    }
+
+    .clients-say__comment {
+        @include flex-center;
+        gap: 64px;
+    }
+
+    // .comment__item {
+    //     pd
+    // }
+}

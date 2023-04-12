@@ -1,0 +1,58 @@
+.join-wrapp {
+    background: var(--background-default-btn);
+    border-radius: 32px;
+}
+
+.join-title {
+    display: block;
+    @include font-text($fw: 600, $fs: 32px, $lh: 48px);
+    color: var(--color-def);
+}
+
+.join-btn {
+    @include font-text($fw: 600, $fs: 20px, $lh: 30px);
+    color: var(--color-hover-link);
+    padding: 10px 34px;
+    border-radius: 8px;
+
+    transition: color var(--transition), background var(--transition), border-color var(--transition);
+
+    &:is(:hover, :focus) {
+        background: var(--background-default-btn);
+        border-color: #bcd0e5;
+        color: var(--color-def);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .join-content-box {
+        padding: 17px 21px 32px;
+        text-align: center;
+    }
+
+    .join-btn {
+        @include margin-auto;
+        margin-top: 50px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .join-wrapp {
+        @include flex-center;
+        max-width: 968px;
+
+        picture {
+            flex-grow: 1;
+        }
+    }
+
+    .join-content-box {
+        padding-top: 49px;
+        padding-bottom: 56px;
+        padding-left: 51px;
+    }
+
+    .join-title {
+        max-width: 510px;
+        margin-bottom: 46px;
+    }
+}

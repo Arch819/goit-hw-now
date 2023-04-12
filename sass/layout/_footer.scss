@@ -1,0 +1,165 @@
+.footer {
+    padding-top: 100px;
+}
+
+.resource-title,
+.legal-stuff__title {
+    @include font-text($fw: 500, $fs: 20px, $lh: 30px);
+    margin-bottom: 8px;
+}
+
+.resource__link,
+.legal-stuff__link {
+    @include font-text($lh: 35px);
+    color: currentColor;
+
+    transition: color var(--transition);
+
+    &:is(:hover, :focus) {
+        color: var(--color-hover-link);
+    }
+}
+
+.form__title {
+    display: block;
+    @include font-text($fw: 500, $fs: 20px, $lh: 30px);
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-phone {
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 42px;
+
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
+    outline: transparent;
+
+    transition: border-color var(--transition);
+
+    &::placeholder {
+        @include font-text($lh: 28px);
+        color: var(--color-hover-link);
+    }
+
+    &:focus {
+        border-color: var(--background-default-btn);
+    }
+}
+
+.input-phone__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    fill: var(--color-hover-link);
+
+    transform: translateY(-50%);
+}
+
+.footer-form__btn {
+    padding: 8px 15px;
+
+    transition: background var(--transition), color var(--transition), border var(--transition);
+
+    &:is(:hover, :focus) {
+        color: var(--color-hover-link);
+        border-color: #bcd0e5;
+    }
+}
+
+.footer__bottom-text {
+    @include font-text($lh: 30px);
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        padding-bottom: 45px;
+    }
+
+    .footer__interactive-box {
+        margin-bottom: 44px;
+        text-align: center;
+    }
+
+    .footer__logo-box {
+        margin-bottom: 32px;
+
+        .logo-link {
+            justify-content: center;
+            margin-bottom: 24px;
+            padding: 0;
+        }
+
+        .social {
+            gap: 16px;
+        }
+    }
+
+    .footer__resource-box,
+    .footer__legal-stuff-box {
+        margin-bottom: 32px;
+    }
+
+    .form__title {
+        text-align: center;
+        margin-bottom: 34px;
+    }
+
+    .input-phone {
+        margin-bottom: 21px;
+    }
+
+    .footer-form__btn {
+        @include margin-auto;
+    }
+}
+@media screen and (min-width: 768px) {
+    .footer {
+        padding-bottom: 40px;
+    }
+
+    .footer__interactive-box {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .footer__logo-box {
+        margin-right: 146px;
+
+        .logo-link {
+            margin-bottom: 18px;
+            padding: 0;
+        }
+
+        .social {
+            gap: 16px;
+        }
+    }
+
+    .footer__resource-box {
+        margin-right: 129px;
+    }
+
+    .footer__legal-stuff-box {
+        margin-right: 83px;
+    }
+
+    .footer__form-box {
+        max-width: 325px;
+    }
+
+    .form__title {
+        margin-bottom: 30px;
+    }
+
+    .input-phone {
+        margin-bottom: 25px;
+    }
+}

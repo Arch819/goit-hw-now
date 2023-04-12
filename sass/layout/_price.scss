@@ -36,7 +36,6 @@
     justify-content: center;
     margin-bottom: 16px;
 
-
     .price__card:not(:nth-child(2)) & {
         color: var(--color-hover-link);
     }
@@ -47,8 +46,6 @@
     text-align: center;
     letter-spacing: 0.2px;
     margin-right: 7px;
-
-    
 }
 .currency {
     text-align: left;
@@ -93,7 +90,9 @@
         color: var(--color-hover-link);
 
         &:is(:hover, :focus) {
-            color: var(--color-text);
+            background: var(--background-default-btn);
+            border-color: #bcd0e5;
+            color: var(--color-def);
         }
     }
 }
