@@ -1,4 +1,3 @@
-
 .navigation {
     @media screen and (max-width: 767px) {
         display: none;
@@ -14,6 +13,8 @@
     }
 }
 .item__link {
+    position: relative;
+    overflow: hidden;
     @include font-text($lh: 28px);
     color: var(--color-text);
     padding-top: 22px;
@@ -23,14 +24,51 @@
         font-weight: 600;
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: var(--color-hover-link);
     }
 
     transition: color var(--transition);
 
-    @media screen and (max-width: 767px){
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        height: 4px;
+        background-color: var(--color-hover-link);
+        border-radius: 4px;
+
+        transition: transform var(--transition);
+    }
+    @media screen and (max-width: 767px) {
         font-size: 26px;
         letter-spacing: 0.04px;
+        &::after {
+            transform: translate(-100%);
+            width: 45%;
+        }
+
+        &:hover,
+        &:focus {
+            &::after {
+                transform: translate(0);
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &::after {
+            transform: scaleX(0);
+            width: 100%;
+        }
+        &:hover,
+        &:focus {
+            &::after {
+                transform: scale(1);
+            }
+        }
     }
 }
