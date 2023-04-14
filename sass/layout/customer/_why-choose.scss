@@ -1,7 +1,7 @@
 .why-choose {
     text-align: center;
     padding-top: 24px;
-    background: #F5F5F5;
+    background: #f5f5f5;
 }
 
 .why-choose-title {
@@ -12,7 +12,7 @@
 .why-choose__item {
     border: 1px solid #dedede;
     border-radius: 10px;
-    padding: 32px 28px 34px;
+    padding: 32px 18px 34px;
 }
 
 .why-choose__icon {
@@ -26,6 +26,7 @@
 }
 
 .why-choose__item-text {
+    min-width: 275px;
     @include font-text($lh: 27px);
     letter-spacing: 0.2px;
 }
@@ -36,7 +37,6 @@
     }
 
     .why-choose__item {
-        
         &:not(:last-child) {
             margin-bottom: 32px;
         }
@@ -46,7 +46,7 @@
     .why-choose {
         padding-bottom: 68px;
     }
-    
+
     .why-choose__list {
         @include flex-center;
         gap: 30px;

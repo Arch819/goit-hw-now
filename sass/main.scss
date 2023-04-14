@@ -17,6 +17,9 @@
 
 // LAYOUT
 @import "./layout/header";
+@import "./layout/footer";
+@import "./layout/join";
+// index
 @import "./layout/hero";
 @import "./layout/for-you";
 @import "./layout/services";
@@ -24,8 +27,8 @@
 @import "./layout/strategies";
 @import "./layout/price";
 @import "./layout/client-say";
-@import "./layout/join";
-@import "./layout/footer";
 // customer
 @import "./layout/customer/client";
 @import "./layout/customer/why-choose";
+@import "./layout/customer/product";
+@import "./layout/customer/join-offers";
