@@ -199,61 +199,77 @@
             </div>
         </section>
         <section class="great-effects">
-            <div class="great-effects-wrap">
-                <h2 class="great-effects__title"></h2>
-                <picture>
-                    <source media="(m-width: 76px)"
-                        srcset="./images/pricing/mobile/m-pricing-img.png 1x, ./images/pricing/mobile/m-pricing-img@2x.png 2x"
-                        width="352" height="288">
-                    <source media="(m-width: 76px)"
-                        srcset="./images/pricing/pricing-img.png 1x, ./images/pricing/pricing-img@2x.png 2x" width="528"
-                        height="392">
-                    <img srcset="./images/pricing/pricing-img@2x.png 2x" src="./images/pricing/pricing-img.png"
-                        alt="devices">
-                </picture>
-                <div class="great-effects__text-box">
-                    <ul class="great-effects__text-list list">
-                        <li class="great-effects__item-text">
-                            <svg class="great-effects__item-icon" width="24" height="24">
-                                <use href="./images/sprite.svg#icon-enterpreneur"></use>
-                            </svg>
-                            <h3 class="great-effects__item-title">Enterpreneur</h3>
-                            <p class="great-effects__item-text">Product is a great way to help medium and samall
-                                enterprise owners achieve their goals</p>
-                        </li>
-                        <li class="great-effects__item-text">
-                            <svg class="great-effects__item-icon" width="24" height="24">
-                                <use href="./images/sprite.svg#icon-accountants"></use>
-                            </svg>
-                            <h3 class="great-effects__item-title">Accountants</h3>
-                            <p class="great-effects__item-text">Whether you are working on contract with clients, or on
-                                other key accounting documents, Product is for you</p>
-                        </li>
-                        <li class="great-effects__item-text">
-                            <svg class="great-effects__item-icon" width="24" height="24">
-                                <use href="./images/sprite.svg#icon-universities"></use>
-                            </svg>
-                            <h3 class="great-effects__item-title">Universities</h3>
-                            <p class="great-effects__item-text">Organize university projects and have documents easily
-                                graded online with Product</p>
-                        </li>
-                    </ul>
+            <div class="great-effects-wrap container">
+                <h2 class="great-effects__title">Product is being used with great effects alongside:</h2>
+                <div class="great-effects__content-box">
+                    <picture>
+                        <source media="(max-width: 767px)"
+                            srcset="./images/pricing/mobile/m-pricing-img.png 1x, ./images/pricing/mobile/m-pricing-img@2x.png 2x"
+                            width="352" height="288">
+                        <source media="(min-width: 768px)"
+                            srcset="./images/pricing/pricing-img.png 1x, ./images/pricing/pricing-img@2x.png 2x"
+                            width="528" height="392">
+                        <img srcset="./images/pricing/pricing-img@2x.png 2x" src="./images/pricing/pricing-img.png"
+                            alt="devices">
+                    </picture>
+                    <div class="great-effects__text-box">
+                        <ul class="great-effects__text-list list">
+                            <li class="great-effects__item-text">
+                                <div class="great-effects__title-box">
+                                    <span class="great-effects__icon">
+                                        <svg class="great-effects__item-icon" width="24" height="24">
+                                            <use href="./images/sprite.svg#icon-enterpreneur"></use>
+                                        </svg>
+                                    </span>
+                                    <h3 class="great-effects__item-title">Enterpreneur</h3>
+                                </div class="">
+                                <p class="great-effects__item-text">Product is a great way to help medium and samall
+                                    enterprise owners achieve their goals</p>
+                            </li>
+                            <li class="great-effects__item-text">
+                                <div class="great-effects__title-box">
+                                    <span class="great-effects__icon">
+                                        <svg class="great-effects__item-icon" width="24" height="24">
+                                            <use href="./images/sprite.svg#icon-accountants"></use>
+                                        </svg>
+                                    </span>
+                                    <h3 class="great-effects__item-title">Accountants</h3>
+                                </div>
+                                <p class="great-effects__item-text">Whether you are working on contract with clients, or
+                                    on
+                                    other key accounting documents, Product is for you</p>
+                            </li>
+                            <li class="great-effects__item-text">
+                                <div class="great-effects__title-box">
+                                    <span class="great-effects__icon">
+                                        <svg class="great-effects__item-icon" width="24" height="24">
+                                            <use href="./images/sprite.svg#icon-universities"></use>
+                                        </svg>
+                                    </span>
+                                    <h3 class="great-effects__item-title">Universities</h3>
+                                </div>
+                                <p class="great-effects__item-text">Organize university projects and have documents
+                                    easily
+                                    graded online with Product</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="question">
-            <div class="question-wrap">
-                <h2 class="question__title"></h2>
-                <p class="question__text"></p>
+            <div class="question-wrap container">
+                <h2 class="question__title">Frequently asked question</h2>
+                <p class="question__text">Something is not clear? You need help? Check our FAQ section</p>
                 <ul class="question__list list">
                     <li class="question__item">
-                        <div class="question__item-icon-box">
+                        <div class="question__item-question-box" onclick="toggleAnswer()">
                             <svg class="question__item-icon" width="24" height="24">
                                 <use class="plus" href="./images/sprite.svg#icon-plus_circle"></use>
                                 <use class="minus" href="./images/sprite.svg#icon-minus_circle"></use>
                             </svg>
+                            <b class="question__item-question">What are my payment option?</b>
                         </div>
-                        <b class="question__item-question">What are my payment option?</b>
                         <p class="question__item-answer">After creating your account you will have an oppurtunity to
                             create your first project that will be associated withthe
                             collaborators e-mail. An invitation will be sent automatically. Then, invited user will have
@@ -261,13 +277,28 @@
                             e-mail and finish userd onboarding.</p>
                     </li>
                     <li class="question__item">
-                        <div class="question__item-icon-box">
-                            <svg class="question__item-icon" width="24" height="24">
+                        <div class="question__item-question-box">
+                            <svg class="question__item-icon" width="24" height="24" onclick="toggleAnswer()">
                                 <use class="plus" href="./images/sprite.svg#icon-plus_circle"></use>
                                 <use class="minus" href="./images/sprite.svg#icon-minus_circle"></use>
                             </svg>
+                            <b class="question__item-question">How can I invite collaborator to platform?</b>
                         </div>
-                        <b class="question__item-question">How can I invite collaborator to platform?</b>
+                        <p class="question__item-answer" id="answer">After creating your account you will have an
+                            oppurtunity to
+                            create your first project that will be associated withthe
+                            collaborators e-mail. An invitation will be sent automatically. Then, invited user will have
+                            to confirm his account by
+                            e-mail and finish userd onboarding.</p>
+                    </li>
+                    <li class="question__item">
+                        <div class="question__item-question-box">
+                            <svg class="question__item-icon" width="24" height="24" onclick="toggleAnswer()">
+                                <use class="plus" href="./images/sprite.svg#icon-plus_circle"></use>
+                                <use class="minus" href="./images/sprite.svg#icon-minus_circle"></use>
+                            </svg>
+                            <b class="question__item-question">Can I upgrade my plan?</b>
+                        </div>
                         <p class="question__item-answer">After creating your account you will have an oppurtunity to
                             create your first project that will be associated withthe
                             collaborators e-mail. An invitation will be sent automatically. Then, invited user will have
@@ -275,27 +306,13 @@
                             e-mail and finish userd onboarding.</p>
                     </li>
                     <li class="question__item">
-                        <div class="question__item-icon-box">
-                            <svg class="question__item-icon" width="24" height="24">
+                        <div class="question__item-question-box">
+                            <svg class="question__item-icon" width="24" height="24" onclick="toggleAnswer()">
                                 <use class="plus" href="./images/sprite.svg#icon-plus_circle"></use>
                                 <use class="minus" href="./images/sprite.svg#icon-minus_circle"></use>
                             </svg>
+                            <b class="question__item-question">Can I cancel my plan at anytime?</b>
                         </div>
-                        <b class="question__item-question">Can I upgrade my plan?</b>
-                        <p class="question__item-answer">After creating your account you will have an oppurtunity to
-                            create your first project that will be associated withthe
-                            collaborators e-mail. An invitation will be sent automatically. Then, invited user will have
-                            to confirm his account by
-                            e-mail and finish userd onboarding.</p>
-                    </li>
-                    <li class="question__item">
-                        <div class="question__item-icon-box">
-                            <svg class="question__item-icon" width="24" height="24">
-                                <use class="plus" href="./images/sprite.svg#icon-plus_circle"></use>
-                                <use class="minus" href="./images/sprite.svg#icon-minus_circle"></use>
-                            </svg>
-                        </div>
-                        <b class="question__item-question">Can I cancel my plan at anytime?</b>
                         <p class="question__item-answer">After creating your account you will have an oppurtunity to
                             create your first project that will be associated withthe
                             collaborators e-mail. An invitation will be sent automatically. Then, invited user will have
@@ -317,8 +334,8 @@
                         width="351" height="331">
                     <source media="(min-width: 768px)"
                         srcset="./images/product-page/join/join-img.png 1x, ./images/product-page/join/join-img@2x.png 2x">
-                    <img srcset="./images/product-page/join/join-img@2x.png 2x" src="./images/product-page/join/join-img.png"
-                        alt="" width="351" height="331">
+                    <img srcset="./images/product-page/join/join-img@2x.png 2x"
+                        src="./images/product-page/join/join-img.png" alt="" width="351" height="331">
                 </picture>
             </div>
         </section>
@@ -372,7 +389,8 @@
                         <li class="legal-stuff__item"><a class="legal-stuff__link link" href="">Disclaimer</a></li>
                         <li class="legal-stuff__item"><a class="legal-stuff__link link" href="">Financing</a></li>
                         <li class="legal-stuff__item"><a class="legal-stuff__link link" href="">Privacy Policy</a></li>
-                        <li class="legal-stuff__item"><a class="legal-stuff__link link" href="">Terms of Service</a></li>
+                        <li class="legal-stuff__item"><a class="legal-stuff__link link" href="">Terms of Service</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footer__form-box">

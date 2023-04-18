@@ -1,0 +1,68 @@
+.enterprise {
+    background: linear-gradient(180deg, #F7F7F7 0%, rgba(247, 247, 247, 0) 100%);
+    text-align: center;
+}
+
+.enterprise__top-text {
+@include font-text($fw: 600, $fs: 24px, $lh: 36px);
+}
+
+.enterprise__title {
+@include font-text($fw: 700, $fs: 32px, $lh: 48px);
+}
+
+.enterprise__text {
+@include font-text($fs: 18px, $lh: 27px);
+}
+
+.enterprise-btn {
+    @include font-text($fw: 600, $fs: 18px, $lh: 22px);
+    border-radius: 8px;
+    padding: 11px 18px;
+    @include margin-auto;
+
+    transition: background var(--transition), border var(--transition), color var(--transition);
+
+    &:is(:hover, :focus) {
+        border-color: var(--border-color-btn);
+        color: var(--color-hover-link);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .enterprise {
+        padding-top: 47px;
+        padding-bottom: 46px;
+    }
+
+    .enterprise__top-text {
+        margin-bottom: 24px;
+    }
+
+    .enterprise__title {
+        margin-bottom:25px;
+    }
+
+    .enterprise__text {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .enterprise {
+        padding-top: 53px;
+        padding-bottom: 51px;
+    }
+
+    .enterprise__top-text {
+        margin-bottom: 16px;
+    }
+
+    .enterprise__title {
+        margin-bottom: 8px;
+    }
+
+    .enterprise__text {
+        margin-bottom: 32px;
+    }
+}

@@ -26,3 +26,32 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+
+function toggleAnswer() {
+      
+  const plusIcons = document.querySelectorAll('.plus');
+  const minusIcons = document.querySelectorAll('.minus');
+  const answerElements = document.querySelectorAll('.question__item-answer');
+
+  for (let i = 0; i < plusIcons.length; i++) {
+    plusIcons[i].addEventListener('click', function() {
+    plusIcons[i].style.display = 'none';
+    minusIcons[i].style.display = 'block';
+    answerElements[i].style.display = 'block';
+  });
+  }
+
+  for (let i = 0; i < minusIcons.length; i++) {
+    minusIcons[i].addEventListener('click', function() {
+    minusIcons[i].style.display = 'none';
+    plusIcons[i].style.display = 'block';
+    answerElements[i].style.display = 'none';
+  });
+  }
+}
+// question__item-question
+
+
+
+
+
