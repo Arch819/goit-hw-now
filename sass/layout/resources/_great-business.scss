@@ -1,0 +1,156 @@
+.great-business__title {
+    @include font-text($fw: 600, $fs: 40px, $lh: 60px);
+}
+
+.great-business__text {
+    @include font-text($fs: 20px, $lh: 32px);
+    letter-spacing: -0.03em;
+}
+
+.great-business__form {
+    position: relative;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.great-business__input {
+    width: 100%;
+    height: 66px;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 145px;
+
+    border-radius: 100px;
+    border: 1px solid #eaeaea;
+
+    outline: transparent;
+
+    transition: border-color var(--transition);
+
+    &::placeholder {
+        @include font-text($lh: 16px);
+        letter-spacing: -0.03em;
+    }
+
+    &:focus {
+        border-color: var(--border-color-btn);
+    }
+}
+
+.great-business__btn {
+    @include font-text($fw: 600, $lh: 0px);
+
+    border-radius: 100px;
+    padding: 25px 24px;
+
+    position: absolute;
+    top: 50%;
+    right: 8px;
+
+    transform: translateY(-50%);
+
+    transition: background var(--transition), color var(--transition), border-color var(--transition);
+
+    &:is(:hover, :focus) {
+        color: var(--color-hover-link);
+        border-color: var(--border-color-btn);
+    }
+}
+
+.great-business__join-over {
+    @include flex-center;
+}
+
+.join-over__user-avtar {
+    @include flex-center;
+}
+
+.join-over__item {
+    &:nth-child(2) {
+        transform: translateX(-24px);
+    }
+
+    &:nth-child(3) {
+        transform: translateX(-37px);
+    }
+}
+
+.join-over__text {
+    @include font-text($fs: 14px, $lh: 21px);
+
+    transform: translateX(-28px);
+
+    span {
+        color: var(--color-hover-link);
+    }
+}
+
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 21px;
+
+@media screen and (max-width: 767px) {
+    .great-business {
+        padding-top: 50px;
+    }
+
+    .great-business-text-box {
+        margin-bottom: 88px;
+    }
+
+    .great-business__title {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .great-business__text {
+        text-align: center;
+        margin-bottom: 19px;
+    }
+
+    .great-business__form {
+        max-width: 446px;
+    }
+
+    .great-business__input {
+        padding-left: 22px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .great-business {
+        padding-top: 76px;
+    }
+
+    .great-business-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .great-business-text-box {
+        max-width: 580px;
+    }
+
+    .great-business__title {
+        max-width: 400px;
+        margin-bottom: 24px;
+    }
+
+    .great-business__text {
+        margin-bottom: 24px;
+    }
+
+    .great-business__form {
+        max-width: 470px;
+    }
+
+    .great-business__input {
+        padding-left: 27px;
+    }
+
+    .great-business__img {
+        width: 50%;
+        max-width: 541px;
+    }
+}

@@ -1,0 +1,139 @@
+.contact-us__title {
+    @include font-text($fw: 700, $fs: 34px, $lh: 57px);
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.contact-us__text {
+    @include font-text($fw: 500, $fs: 18px, $lh: 28px);
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.contact-us__form-title {
+    display: block;
+
+    @include font-text($fw: 700, $fs: 24px, $lh: 33px);
+    text-align: center;
+}
+
+.contact-us__input {
+    width: 100%;
+    background: #f5f5f5;
+    border: 1px solid #e8e8e8;
+
+    &::placeholder {
+        letter-spacing: 0.1px;
+        color: currentColor;
+    }
+
+    &.contact-us__name,
+    &.contact-us__email {
+        border-radius: 39px;
+        padding: 19px 20px;
+    }
+
+    &.contact-us__message {
+        padding: 23px 20px;
+        resize: none;
+        height: 193px;
+    }
+}
+
+.contact-us__btn {
+    padding: 18px 54px;
+    border-radius: 35px;
+
+    @include font-text($fw: 500, $lh: 16px);
+    letter-spacing: 0.2px;
+
+    transition: background var(--transition), color var(--transition), border var(--transition);
+
+    &:is(:hover, :focus) {
+        border-color: var(--border-color-btn);
+        color: var(--color-hover-link);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contact-us {
+        padding-top: 30px;
+    }
+
+    .contact-us__title {
+        margin-bottom: 16px;
+    }
+
+    .contact-us__text {
+        margin-bottom: 60px;
+    }
+
+    .contact-us .social {
+        margin-bottom: 45px;
+    }
+
+    .contact-us__form {
+        margin-top: 100px;
+    }
+
+    .contact-us__form-title {
+        margin-bottom: 32px;
+    }
+
+    .contact-us__input {
+        &.contact-us__name,
+        &.contact-us__email {
+            margin-bottom: 32px;
+        }
+
+        &.contact-us__message {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contact-us {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .contact-us-wrap {
+        max-width: 911px;
+    }
+
+    .contact-us__title {
+        margin-bottom: 8px;
+    }
+
+    .contact-us__text {
+        margin-bottom: 65px;
+    }
+
+    .contact-us .social {
+        margin-bottom: 55px;
+    }
+
+    .contact-us__form {
+        margin-top: 50px;
+        padding: 52px 50px;
+
+        border: 1px solid #dddddd;
+        border-radius: 20px;
+    }
+
+    .contact-us__form-title {
+        margin-bottom: 45px;
+    }
+
+    .contact-us__input {
+        &.contact-us__name,
+        &.contact-us__email {
+            margin-bottom: 45px;
+        }
+
+        &.contact-us__message {
+            margin-bottom: 45px;
+        }
+    }
+}

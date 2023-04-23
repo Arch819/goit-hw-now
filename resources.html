@@ -118,19 +118,29 @@
                         customers.</p>
                     <form class="great-business__form">
                         <input class="great-business__input" type="email" name="user-email"
-                            placeholder="Enter your email adress">
-                        <button class="great-business__btn general-btn btn">Join Now</button>
+                            placeholder="Enter your email adress" required>
+                        <button class="great-business__btn general-btn btn" type="submit">Join Now</button>
                     </form>
                     <div class="great-business__join-over">
-                        <img src="" alt=""><img src="" alt=""><img src="" alt="">
-                        <p class="join-over__text">Join over 4,000+ other</p>
+                        <ul class="join-over__user-avtar">
+                            <li class="join-over__item">
+                                <img src="./images/resources/avatar-man1.png" alt="user avatar" width="50" height="50">
+                            </li>
+                            <li class="join-over__item">
+                                <img src="./images/resources/avatar-man2.png" alt="user avatar" width="50" height="50">
+                            </li>
+                            <li class="join-over__item">
+                                <img src="./images/resources/avatar-man3.png" alt="user avatar" width="50" height="50">
+                            </li>
+                        </ul>
+                        <p class="join-over__text">Join over <span>4,000</span>+ other</p>
                     </div>
                 </div>
-                <picture>
-                    <source media="(max-width: 767px)"
+                <picture class="great-business__img">
+                    <source media="(max-width: 1199px)"
                         srcset="./images/resources/mobile/m-great-business-img.png 1x, ./images/resources/mobile/m-great-business-img@2x.png 2x"
                         width="359" height="263">
-                    <source media="(min-width: 768px)"
+                    <source media="(min-width: 1200px)"
                         srcset="./images/resources/great-business-img.png 1x, ./images/resources/great-business-img@2x.png 2x"
                         width="541" height="482">
                     <img srcset="./images/resources/great-business-img@2x.png 2x"
@@ -145,40 +155,64 @@
                     keystroke away.</p>
                 <ul class="latest-stories__list list">
                     <li class="latest-stories__item">
-                        <img srcset="./images/resources/stories-img1@2x.jpg 2x"
-                            src="./images/resources/stories-img1.jpg" alt="">
-                        <p class="latest-stories__item-text">By <b>Wahid Ari</b> | 03 March 2019</p>
-                        <h3 class="latest-stories__item-title">Increasing Prosperity With Positive Thinking</h3>
+                        <a href="" class="latest-stories__item-link link">
+                            <img srcset="./images/resources/stories-img1@2x.jpg 2x"
+                                src="./images/resources/stories-img1.jpg" alt="">
+                            <div class="latest-stories__text-wrap">
+                                <p class="latest-stories__item-text">By <b>Wahid Ari</b> | 03 March 2019</p>
+                                <h3 class="latest-stories__item-title">Increasing Prosperity With Positive Thinking</h3>
+                            </div>
+                        </a>
                     </li>
                     <li class="latest-stories__item">
-                        <img srcset="./images/resources/stories-img2@2x.jpg 2x"
-                            src="./images/resources/stories-img2.jpg" alt="">
-                        <p class="latest-stories__item-text">By <b>Wahid Ari</b> | 03 March 2019</p>
-                        <h3 class="latest-stories__item-title">Motivation Is The First Step To Success</h3>
+                        <a href="" class="latest-stories__item-link link">
+                            <img srcset="./images/resources/stories-img2@2x.jpg 2x"
+                                src="./images/resources/stories-img2.jpg" alt="">
+                            <div class="latest-stories__text-wrap">
+                                <p class="latest-stories__item-text">By <b>Wahid Ari</b> | 03 March 2019</p>
+                                <h3 class="latest-stories__item-title">Motivation Is The First Step To Success</h3>
+                            </div>
+                        </a>
                     </li>
                     <li class="latest-stories__item">
-                        <img srcset="./images/resources/stories-img3@2x.jpg 2x"
-                            src="./images/resources/stories-img3.jpg" alt="">
-                        <p class="latest-stories__item-text">By <b>Wahid Ari</b> | 03 March 2019</p>
-                        <h3 class="latest-stories__item-title">Success Steps For Your Personal Or Business</h3>
+                        <a href="" class="latest-stories__item-link link">
+                            <img srcset="./images/resources/stories-img3@2x.jpg 2x"
+                                src="./images/resources/stories-img3.jpg" alt="">
+                            <div class="latest-stories__text-wrap">
+                                <p class="latest-stories__item-text">By <b>Wahid Ari</b> | 03 March 2019</p>
+                                <h3 class="latest-stories__item-title">Success Steps For Your Personal Or Business</h3>
+                            </div>
+                        </a>
                     </li>
                     <li class="latest-stories__item">
-                        <img srcset="./images/resources/stories-img4@2x.jpg 2x"
-                            src="./images/resources/stories-img4.jpg" alt="">
-                        <p class="latest-stories__item-text">By <b>Wahid Ari</b> | 03 March 2019</p>
-                        <h3 class="latest-stories__item-title">Increasing Prosperity With Positive Thinking</h3>
+                        <a href="" class="latest-stories__item-link link">
+                            <img srcset="./images/resources/stories-img4@2x.jpg 2x"
+                                src="./images/resources/stories-img4.jpg" alt="">
+                            <div class="latest-stories__text-wrap">
+                                <p class="latest-stories__item-text">By <b>Wahid Ari</b> | 03 March 2019</p>
+                                <h3 class="latest-stories__item-title">Increasing Prosperity With Positive Thinking</h3>
+                            </div>
+                        </a>
                     </li>
                     <li class="latest-stories__item">
-                        <img srcset="./images/resources/stories-img5@2x.jpg 2x"
-                            src="./images/resources/stories-img5.jpg" alt="">
-                        <p class="latest-stories__item-text">By <b>Wahid Ari</b> | 03 March 2019</p>
-                        <h3 class="latest-stories__item-title">Motivation Is The First Step To Success</h3>
+                        <a href="" class="latest-stories__item-link link">
+                            <img srcset="./images/resources/stories-img5@2x.jpg 2x"
+                                src="./images/resources/stories-img5.jpg" alt="">
+                            <div class="latest-stories__text-wrap">
+                                <p class="latest-stories__item-text">By <b>Wahid Ari</b> | 03 March 2019</p>
+                                <h3 class="latest-stories__item-title">Motivation Is The First Step To Success</h3>
+                            </div>
+                        </a>
                     </li>
                     <li class="latest-stories__item">
-                        <img srcset="./images/resources/stories-img6@2x.jpg 2x"
-                            src="./images/resources/stories-img6.jpg" alt="">
-                        <p class="latest-stories__item-text">By <b>Wahid Ari</b> | 03 March 2019</p>
-                        <h3 class="latest-stories__item-title">Success Steps For Your Personal Or Business</h3>
+                        <a href="" class="latest-stories__item-link link">
+                            <img srcset="./images/resources/stories-img6@2x.jpg 2x"
+                                src="./images/resources/stories-img6.jpg" alt="">
+                            <div class="latest-stories__text-wrap">
+                                <p class="latest-stories__item-text">By <b>Wahid Ari</b> | 03 March 2019</p>
+                                <h3 class="latest-stories__item-title">Success Steps For Your Personal Or Business</h3>
+                            </div>
+                        </a>
                     </li>
                 </ul>
                 <button class="latest-stories__btn btn" type="button">
@@ -190,7 +224,7 @@
             </div>
         </section>
         <section class="contact-us">
-            <div class="contact-us container">
+            <div class="contact-us-wrap container">
                 <h2 class="contact-us__title">Contact Us</h2>
                 <p class="contact-us__text">Need more detailed information?
                     Get in touch with us.</p>
@@ -217,7 +251,7 @@
                         </a>
                     </li>
                 </ul>
-                <picture>
+                <picture class="contact-us__img">
                     <source media="(max-width: 767px)"
                         srcset="./images/resources/mobile/m-map-screen.jpg 1x, ./images/resources/mobile/m-map-screen@2x.jpg 2x"
                         width="362" height="323">
@@ -227,15 +261,14 @@
                     <img srcset="./images/resources/map-screen@2x.jpg 2x" src="./images/resources/map-screen.jpg"
                         alt="map screen">
                 </picture>
-                <form class="latest-stories__form">
-                    <b class="latest-stories__form-title">Send a message</b>
-                    <input class="latest-stories__name latest-stories__input" type="text" name="" id=""
-                        placeholder="Your Name">
-                    <input class="latest-stories__email latest-stories__input" type="email" name="" id=""
+                <form class="contact-us__form">
+                    <b class="contact-us__form-title">Send a message</b>
+                    <input class="contact-us__name contact-us__input" type="text" name="" id="" placeholder="Your Name">
+                    <input class="contact-us__email contact-us__input" type="email" name="" id=""
                         placeholder="Your Email">
-                    <textarea class="latest-stories__message latest-stories__input" name="" id=""
+                    <textarea class="contact-us__message contact-us__input" name="" id=""
                         placeholder="Your Message"></textarea>
-                    <button class="latest-stories__btn general-btn btn" type="button">Send</button>
+                    <button class="contact-us__btn general-btn btn" type="submit">Send</button>
                 </form>
             </div>
         </section>
@@ -297,12 +330,12 @@
                     <b class="form__title">knowing you're always on the best energy deal.</b>
                     <form>
                         <div class="input-box">
-                            <input class="input-phone" type="tel" placeholder="Enter your phone number">
+                            <input class="input-phone" type="tel" placeholder="Enter your phone number" required>
                             <svg class="input-phone__icon" width="18" height="28">
                                 <use href="./images/sprite.svg#icon-mobile-screen"></use>
                             </svg>
                         </div>
-                        <button class="footer-form__btn general-btn btn" type="button">Sign up Now</button>
+                        <button class="footer-form__btn general-btn btn" type="submit">Sign up Now</button>
                     </form>
                 </div>
             </div>

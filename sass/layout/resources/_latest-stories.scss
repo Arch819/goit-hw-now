@@ -1,0 +1,98 @@
+.latest-stories {
+    padding-top: 66px;
+    padding-bottom: 100px;
+}
+
+.latest-stories__title {
+    @include font-text($fw: 700, $fs: 34px, $lh: 51px);
+    text-align: center;
+}
+
+.latest-stories__text {
+    @include font-text($fw: 500);
+    text-align: center;
+}
+
+.latest-stories__list {
+    @include flex-center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.latest-stories__item {
+    width: 348px;
+    height: 359px;
+
+    border: 1px solid #dedede;
+    border-radius: 8px;
+
+    img {
+        border-radius: 8px 8px 0 0 ;
+    }
+}
+
+.latest-stories__item-link {
+    &:is(:hover, :focus) .latest-stories__item-title {
+        color: var(--color-hover-link);
+    }
+}
+
+.latest-stories__text-wrap {
+    padding: 22px 24px 40px;
+}
+
+.latest-stories__item-text {
+    @include font-text($lh: 28px);
+    margin-bottom: 12px;
+
+    b {
+        font-weight: 700;
+    }
+}
+
+.latest-stories__item-title {
+    @include font-text($fw: 700, $fs: 24px, $lh: 40px);
+}
+
+.latest-stories__btn {
+    @include flex-center;
+    gap: 8px;
+    @include margin-auto;
+
+    background: transparent;
+
+    @include font-text($fw: 500, $fs: 18px);
+}
+// button
+// font-weight: 500;
+// font-size: 18px;
+// line-height: 26px;
+
+@media screen and (max-width: 767px) {
+    .latest-stories__title {
+        margin-bottom: 16px;
+    }
+
+    .latest-stories__text {
+        margin-bottom: 50px;
+    }
+
+    .latest-stories__list {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .latest-stories__title {
+        margin-bottom: 8px;
+    }
+
+    .latest-stories__text {
+        margin-bottom: 32px;
+    }
+
+    .latest-stories__list {
+        margin-bottom: 32px;
+    }
+}
